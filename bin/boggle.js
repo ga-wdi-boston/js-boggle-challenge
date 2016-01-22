@@ -61,3 +61,31 @@ let bigBoggle = function bigBoggle(tray, listOfPairs) {
 
   return wordFormed;
 };
+
+let superBigBoggle = function superBigBoggle(tray, listOfPairs) {
+  let boggleBoard = [
+    [null, null, null, null, null, null],
+    [null, null, null, null, null, null],
+    [null, null, null, null, null, null],
+    [null, null, null, null, null, null],
+    [null, null, null, null, null, null],
+    [null, null, null, null, null, null],
+  ];
+
+  let counter = 0;
+
+  for (var x = 0; x < 6; x++) {
+    for (y = 0; y < 6; y++) {
+      boggleBoard[x][y] = tray[counter];
+      counter++;
+    }
+  }
+
+  let wordFormed = '';
+
+  for (i = 0; i < 6; i++) {
+    wordFormed += boggleBoard[listOfPairs[i][0]][listOfPairs[i][1]];
+  }
+
+  return wordFormed;
+};
