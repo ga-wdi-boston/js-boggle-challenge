@@ -81,7 +81,7 @@ describe('challenge', function() {
   });
 
   describe('Super Big Boggle', function() {
-    const boggle = boggleVariants.bigBoggle;
+    const boggle = boggleVariants.superBigBoggle;
     const tray = 'ndehykwdibtefloamsvbcgrijumpslpearnt'.split('');
 
     let dogs = [
@@ -103,6 +103,17 @@ describe('challenge', function() {
 
     it(`returns 'cat' for ${cat.join(';')}`, function() {
       expect(boggle(tray, cat)).toBe('cat');
+    });
+
+    let loam = [
+      [2, 1],
+      [2, 2],
+      [2, 3],
+      [2, 4],
+    ];
+
+    it(`returns 'loam' for ${loam.join(';')}`, function() {
+      expect(boggle(tray, loam)).toBe('loam');
     });
 
   });
