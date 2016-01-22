@@ -19,8 +19,8 @@ let lettersAtCoordinates = function lettersAtCoordinates(tray, listOfPairs) {
 
   let counter = 0;
 
-  for (var x = 0; x < 4; x++) {
-    for (y = 0; y < 4; y++) {
+  for (let x = 0; x < 4; x++) {
+    for (let y = 0; y < 4; y++) {
       boggleBoard[x][y] = tray[counter];
       counter++;
     }
@@ -28,7 +28,7 @@ let lettersAtCoordinates = function lettersAtCoordinates(tray, listOfPairs) {
 
   let wordFormed = '';
 
-  for (i = 0; i < 4; i++) {
+  for (let i = 0; i < 4; i++) {
     wordFormed += boggleBoard[listOfPairs[i][0]][listOfPairs[i][1]];
   }
 
@@ -46,8 +46,8 @@ let bigBoggle = function bigBoggle(tray, listOfPairs) {
 
   let counter = 0;
 
-  for (var x = 0; x < 5; x++) {
-    for (y = 0; y < 5; y++) {
+  for (let x = 0; x < 5; x++) {
+    for (let y = 0; y < 5; y++) {
       boggleBoard[x][y] = tray[counter];
       counter++;
     }
@@ -55,7 +55,7 @@ let bigBoggle = function bigBoggle(tray, listOfPairs) {
 
   let wordFormed = '';
 
-  for (i = 0; i < 5; i++) {
+  for (let i = 0; i < 5; i++) {
     wordFormed += boggleBoard[listOfPairs[i][0]][listOfPairs[i][1]];
   }
 
@@ -74,8 +74,8 @@ let superBigBoggle = function superBigBoggle(tray, listOfPairs) {
 
   let counter = 0;
 
-  for (var x = 0; x < 6; x++) {
-    for (y = 0; y < 6; y++) {
+  for (let x = 0; x < 6; x++) {
+    for (let y = 0; y < 6; y++) {
       boggleBoard[x][y] = tray[counter];
       counter++;
     }
@@ -83,7 +83,7 @@ let superBigBoggle = function superBigBoggle(tray, listOfPairs) {
 
   let wordFormed = '';
 
-  for (i = 0; i < 6; i++) {
+  for (let i = 0; i < 6; i++) {
     wordFormed += boggleBoard[listOfPairs[i][0]][listOfPairs[i][1]];
   }
 
