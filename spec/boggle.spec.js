@@ -26,7 +26,7 @@ describe('challenge', function() {
     ];
 
     it(`returns 'cat' for ${cat.join(';')}`, function() {
-      expect(boggle(tray, dogs)).toBe('cat');
+      expect(boggle(tray, cat)).toBe('cat');
     });
 
     let loam = [
@@ -64,7 +64,7 @@ describe('challenge', function() {
     ];
 
     it(`returns 'cat' for ${cat.join(';')}`, function() {
-      expect(boggle(tray, dogs)).toBe('cat');
+      expect(boggle(tray, cat)).toBe('cat');
     });
 
     let loam = [
@@ -102,7 +102,7 @@ describe('challenge', function() {
     ];
 
     it(`returns 'cat' for ${cat.join(';')}`, function() {
-      expect(boggle(tray, dogs)).toBe('cat');
+      expect(boggle(tray, cat)).toBe('cat');
     });
 
   });
