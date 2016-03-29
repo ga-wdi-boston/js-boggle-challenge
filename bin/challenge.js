@@ -2,8 +2,8 @@
 
 const boggleVariants = require('../lib/challenge.js');
 const boggle = boggleVariants.boggle;
-const bigBoggle = boggleVariants.bigBoggle;
-const superBigBoggle = boggleVariants.superBigBoggle;
+// const bigBoggle = boggleVariants.bigBoggle;
+// const superBigBoggle = boggleVariants.superBigBoggle;
 
 const boggleTray = 'wxxxxoxxxxrxxxxd'.split('');
 
