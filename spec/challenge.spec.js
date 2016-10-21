@@ -18,7 +18,7 @@ describe('challenge', () => {
       [3, 3],
     ];
 
-    xit(`returns 'dogs' for ${dogs.join(';')}`, () => {
+    it(`returns 'dogs' for ${dogs.join(';')}`, () => {
       expect(boggle(tray, dogs)).to.equal('dogs');
     });
 
@@ -39,13 +39,13 @@ describe('challenge', () => {
       [1, 3],
     ];
 
-    xit(`returns 'loam' for ${loam.join(';')}`, () => {
+    it(`returns 'loam' for ${loam.join(';')}`, () => {
       expect(boggle(tray, loam)).to.equal('loam');
     });
 
   });
 
-  xdescribe('Big Boggle', () => {
+  describe('Big Boggle', () => {
     const boggle = boggleVariants.bigBoggle;
     const tray = 'ndehywdibtfloamvbcgrjumps'.split('');
 
@@ -83,7 +83,7 @@ describe('challenge', () => {
 
   });
 
-  xdescribe('Super Big Boggle', () => {
+  describe('Super Big Boggle', () => {
     const boggle = boggleVariants.superBigBoggle;
     const tray = 'ndehykwdibtefloamsvbcgrijumpslpearnt'.split('');
 
