@@ -18,7 +18,7 @@ describe('challenge', () => {
       [3, 3],
     ];
 
-    it(`returns 'dogs' for ${dogs.join(';')}`, () => {
+    xit(`returns 'dogs' for ${dogs.join(';')}`, () => {
       expect(boggle(tray, dogs)).to.equal('dogs');
     });
 
@@ -39,7 +39,7 @@ describe('challenge', () => {
       [1, 3],
     ];
 
-    it(`returns 'loam' for ${loam.join(';')}`, () => {
+    xit(`returns 'loam' for ${loam.join(';')}`, () => {
       expect(boggle(tray, loam)).to.equal('loam');
     });
 
