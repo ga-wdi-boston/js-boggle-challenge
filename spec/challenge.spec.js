@@ -43,7 +43,7 @@ describe('challenge', () => {
     })
   })
 
-  xdescribe('Big Boggle', () => {
+  describe('Big Boggle', () => {
     const boggle = boggleVariants.bigBoggle
     const tray = 'ndehywdibtfloamvbcgrjumps'.split('')
 
@@ -80,7 +80,7 @@ describe('challenge', () => {
     })
   })
 
-  xdescribe('Super Big Boggle', () => {
+  describe('Super Big Boggle', () => {
     const boggle = boggleVariants.superBigBoggle
     const tray = 'ndehykwdibtefloamsvbcgrijumpslpearnt'.split('')
 
